@@ -12,9 +12,8 @@ public class DocumentController {
 	@GetMapping("print/{type}")
 	String printInvoice(@PathVariable String type) {
 		DocumentService ds=Factory.createObject(type);
-		ds.readData();
-		ds.processData();
-		return ds.print();
+		
+		return ds.printDocument();
 		
 	}
 

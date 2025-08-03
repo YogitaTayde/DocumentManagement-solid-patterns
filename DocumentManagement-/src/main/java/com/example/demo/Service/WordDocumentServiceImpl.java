@@ -3,12 +3,8 @@ package com.example.demo.Service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class WordDocumentServiceImpl implements DocumentService{
+public class WordDocumentServiceImpl extends DocumentServiceAB{
 
-	@Override
-	public void readData() {
-		System.out.println("read Data from DB");
-	}
 
 	@Override
 	public void processData() {

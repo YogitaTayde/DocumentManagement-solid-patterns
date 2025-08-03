@@ -3,13 +3,9 @@ package com.example.demo.Service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class pdfDocumentServiceImpl implements DocumentService{
+public class PdfDocumentServiceImpl extends DocumentServiceAB{
 
-	@Override
-	public void readData() {
-		System.out.println("Read data from DB");
-		
-	}
+	
 
 	@Override
 	public void processData() {
@@ -22,4 +18,7 @@ public class pdfDocumentServiceImpl implements DocumentService{
 		return "pdf";
 	}
 
-}
+
+	}
+
+

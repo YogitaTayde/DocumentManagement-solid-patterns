@@ -3,13 +3,9 @@ package com.example.demo.Service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ExcelDocumentServiceImpl implements DocumentService {
+public class ExcelDocumentServiceImpl extends DocumentServiceAB {
 
-	@Override
-	public void readData() {
-		System.out.println("read data from DB");
-		
-	}
+	
 
 	@Override
 	public void processData() {
@@ -23,4 +19,5 @@ public class ExcelDocumentServiceImpl implements DocumentService {
 		return "excel";
 	}
 
+	
 }
